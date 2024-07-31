@@ -1,0 +1,41 @@
+# Ignore the Library directory
+/Library/
+
+# Ignore all log files
+*.log
+
+# Ignore the Temp directory
+/Temp/
+
+# Ignore the Build directory
+/Build/
+
+# Ignore the Builds directory
+/Builds/
+
+# Ignore all auto-generated .csproj and .sln files by Unity
+/*.csproj
+/*.sln
+/*.userprefs
+
+# Ignore Crashlytics generated files
+/crashlytics-build.properties
+
+# Ignore specific file types which may contain sensitive data or are not necessary
+*.apk
+*.aab
+*.unitypackage
+*.pdb
+*.mdb
+*.user
+*.userprefs
+*.tmp
+
+# Rider project-specific files
+.idea/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
