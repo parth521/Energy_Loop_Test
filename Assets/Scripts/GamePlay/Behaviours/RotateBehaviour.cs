@@ -20,5 +20,6 @@ public class RotateBehaviour : MonoBehaviour
     {
         var strategy = RotationFectory.Instance.GetStrategy(gameElement.ElementType);
         strategy.Rotate(gameElement);
+        gameElement.CheckConnection();
     }
 }
