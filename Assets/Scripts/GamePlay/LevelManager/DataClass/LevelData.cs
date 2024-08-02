@@ -3,26 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "levelData", menuName = "Data/levelData")]
-public class LevelData : ScriptableObject 
+public class LevelData : ScriptableObject
 {
     public List<Level> levels = new List<Level>();
 }
-[Serializable]
-public class Levels
-{
-    public List<Level> levels = new List<Level>();
-}
+
 [Serializable]
 public class Level
 {
-    public List<Elements> elements;
-    public List<Vector3> solutinsRotation;
+    public List<ElementData> elements;
+   
 }
+
 [Serializable]
-public class Elements
+public class ElementData
 {
+    public string id;
     public GameElementType gameElement;
     public ConnectorType connectorType;
-    public int elementCount;
-    public List<Vector2> position = new List<Vector2>();
+    public Vector2 position;
+    public Vector3 rotation;
+    public Vector3 solutionsRotation;
 }

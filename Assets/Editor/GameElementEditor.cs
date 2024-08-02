@@ -6,6 +6,7 @@ using UnityEditor;
 public class GameElementEditor : EditorWindow
 {
     private LevelData levelData;
+    private static readonly List<float> possibleZRotations = new List<float> { 0f, 90f, 180f, 270f };
 
     [MenuItem("Tools/Game Element Reader")]
     public static void ShowWindow()
@@ -39,41 +40,52 @@ public class GameElementEditor : EditorWindow
 
         GameElement[] gameElements = GameObject.FindObjectsOfType<GameElement>();
 
-        Dictionary<ConnectorType, Elements> elementsDict = new Dictionary<ConnectorType, Elements>();
-        List<Vector3> solutionsRotation = new List<Vector3>();
+        List<ElementData> elements = new List<ElementData>();
+        int idCounter = 0;
 
         foreach (GameElement gameElement in gameElements)
         {
             RectTransform rectTransform = gameElement.GetComponent<RectTransform>();
             Vector2 anchoredPosition = rectTransform != null ? rectTransform.anchoredPosition : Vector2.zero;
-            Vector3 localEulerAngles = gameElement.transform.localEulerAngles;
+            Vector3 solutionsRotation = gameElement.transform.localEulerAngles;
 
-            if (!elementsDict.ContainsKey(gameElement.connectorType))
+            string id = idCounter.ToString();
+            idCounter++;
+
+            Vector3 randomRotation = GenerateRandomRotation(solutionsRotation);
+
+            ElementData elementData = new ElementData
             {
-                elementsDict[gameElement.connectorType] = new Elements
-                {
-                    gameElement = gameElement.ElementType,
-                    connectorType = gameElement.connectorType,
-                    elementCount = 0,
-                    position = new List<Vector2>()
-                };
-            }
+                id = id,
+                gameElement = gameElement.ElementType,
+                connectorType = gameElement.connectorType,
+                position = anchoredPosition,
+                rotation = randomRotation,
+                solutionsRotation = solutionsRotation
+            };
 
-            elementsDict[gameElement.connectorType].elementCount++;
-            elementsDict[gameElement.connectorType].position.Add(anchoredPosition);
-            solutionsRotation.Add(localEulerAngles);
+            elements.Add(elementData);
         }
 
         Level newLevel = new Level
         {
-            elements = new List<Elements>(elementsDict.Values),
-            solutinsRotation = solutionsRotation
+            elements = elements
         };
 
         levelData.levels.Add(newLevel);
 
         Debug.Log("New level data added.");
         EditorUtility.SetDirty(levelData); // Mark the ScriptableObject as dirty to save changes
+    }
+
+    private Vector3 GenerateRandomRotation(Vector3 solutionsRotation)
+    {
+        Vector3 randomRotation = new Vector3(0f, 0f, solutionsRotation.z);
+        while (randomRotation.z == solutionsRotation.z)
+        {
+            randomRotation.z = possibleZRotations[UnityEngine.Random.Range(0, possibleZRotations.Count)];
+        }
+        return randomRotation;
     }
 
     private void DeleteLastLevel()

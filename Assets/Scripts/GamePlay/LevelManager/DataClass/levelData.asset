@@ -14,26 +14,118 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levels:
   - elements:
-    - gameElement: 1
+    - id: 0
+      gameElement: 1
       connectorType: 1
-      elementCount: 2
-      position:
-      - {x: 720, y: -994.6387}
-      - {x: 720, y: -594.6387}
-      rotaiton:
-      - {x: -0, y: 0, z: 0}
-      - {x: -0, y: 0, z: 0}
-    - gameElement: 1
+      position: {x: 720, y: -994.6387}
+      rotation: {x: 0, y: 0, z: 0}
+      solutionsRotation: {x: -0, y: 0, z: 180}
+    - id: 1
+      gameElement: 1
+      connectorType: 1
+      position: {x: 320, y: -994.6387}
+      rotation: {x: 0, y: 0, z: 270}
+      solutionsRotation: {x: -0, y: 0, z: 90}
+    - id: 2
+      gameElement: 1
+      connectorType: 1
+      position: {x: 1120, y: -594.6387}
+      rotation: {x: 0, y: 0, z: 90}
+      solutionsRotation: {x: -0, y: 0, z: 270}
+    - id: 3
+      gameElement: 1
       connectorType: 4
-      elementCount: 1
-      position:
-      - {x: 320, y: -994.6387}
-      rotaiton:
-      - {x: -0, y: 0, z: 0}
-    - gameElement: 1
+      position: {x: 1120, y: -994.6387}
+      rotation: {x: 0, y: 0, z: 0}
+      solutionsRotation: {x: -0, y: 0, z: 90}
+    - id: 4
+      gameElement: 1
       connectorType: 5
-      elementCount: 1
-      position:
-      - {x: 1120, y: -594.6387}
-      rotaiton:
-      - {x: -0, y: 0, z: 0}
+      position: {x: 320, y: -594.6387}
+      rotation: {x: 0, y: 0, z: 0}
+      solutionsRotation: {x: 0, y: 0, z: 90}
+    - id: 5
+      gameElement: 1
+      connectorType: 1
+      position: {x: 720, y: -594.6387}
+      rotation: {x: 0, y: 0, z: 180}
+      solutionsRotation: {x: -0, y: 0, z: 0}
+  - elements:
+    - id: 0
+      gameElement: 1
+      connectorType: 1
+      position: {x: 720, y: -1638.1427}
+      rotation: {x: 0, y: 0, z: 180}
+      solutionsRotation: {x: -0, y: 0, z: 180}
+    - id: 1
+      gameElement: 1
+      connectorType: 5
+      position: {x: 470, y: -1638.1427}
+      rotation: {x: 0, y: 0, z: 0}
+      solutionsRotation: {x: 0, y: 0, z: 180}
+    - id: 2
+      gameElement: 1
+      connectorType: 5
+      position: {x: 470, y: -1388.1427}
+      rotation: {x: 0, y: 0, z: 270}
+      solutionsRotation: {x: -0, y: 0, z: 180}
+    - id: 3
+      gameElement: 1
+      connectorType: 2
+      position: {x: 720, y: -1388.1427}
+      rotation: {x: 0, y: 0, z: 270}
+      solutionsRotation: {x: -0, y: 0, z: 90}
+    - id: 4
+      gameElement: 1
+      connectorType: 0
+      position: {x: 720, y: -1138.1427}
+      rotation: {x: 0, y: 0, z: 270}
+      solutionsRotation: {x: -0, y: 0, z: 90}
+    - id: 5
+      gameElement: 1
+      connectorType: 4
+      position: {x: 970, y: -888.1427}
+      rotation: {x: 0, y: 0, z: 90}
+      solutionsRotation: {x: -0, y: 0, z: 180}
+    - id: 6
+      gameElement: 1
+      connectorType: 4
+      position: {x: 720, y: -888.14264}
+      rotation: {x: 0, y: 0, z: 270}
+      solutionsRotation: {x: -0, y: 0, z: 0}
+    - id: 7
+      gameElement: 1
+      connectorType: 4
+      position: {x: 470, y: -888.1427}
+      rotation: {x: 0, y: 0, z: 270}
+      solutionsRotation: {x: -0, y: 0, z: 0}
+    - id: 8
+      gameElement: 1
+      connectorType: 0
+      position: {x: 720, y: -638.1427}
+      rotation: {x: 0, y: 0, z: 270}
+      solutionsRotation: {x: -0, y: 0, z: 90}
+    - id: 9
+      gameElement: 1
+      connectorType: 5
+      position: {x: 970, y: -388.1427}
+      rotation: {x: 0, y: 0, z: 90}
+      solutionsRotation: {x: -0, y: 0, z: 0}
+    - id: 10
+      gameElement: 1
+      connectorType: 2
+      position: {x: 720, y: -388.1427}
+      rotation: {x: 0, y: 0, z: 180}
+      solutionsRotation: {x: 0, y: 0, z: 270}
+    - id: 11
+      gameElement: 1
+      connectorType: 5
+      position: {x: 970, y: -138.1427}
+      rotation: {x: 0, y: 0, z: 270}
+      solutionsRotation: {x: -0, y: 0, z: 0}
+    - id: 12
+      gameElement: 1
+      connectorType: 1
+      position: {x: 720, y: -138.14264}
+      rotation: {x: 0, y: 0, z: 180}
+      solutionsRotation: {x: -0, y: 0, z: 0}
