@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerSource : GameElement
+public class Blub : GameElement
 {
-   
+    [SerializeField]private LockRotation blubLockRotation;
+
     public override void CheckConnection()
     {
-        throw new System.NotImplementedException();
+        blubLockRotation.FixRotate(this);
     }
 }

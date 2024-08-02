@@ -61,7 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -134,7 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementType: 0
   rayLength: 2
   layerMask:
     serializedVersion: 2
@@ -201,7 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -274,7 +273,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementType: 0
   rayLength: 2
   layerMask:
     serializedVersion: 2
@@ -291,9 +289,9 @@ GameObject:
   - component: {fileID: 9033140560154008129}
   - component: {fileID: 7221006958347470515}
   - component: {fileID: 7847300442667928802}
-  - component: {fileID: 6323904416743983258}
+  - component: {fileID: 392912339525665942}
   m_Layer: 5
-  m_Name: SqureCurve
+  m_Name: DualLinkCable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -358,7 +356,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6323904416743983258
+--- !u!114 &392912339525665942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -371,3 +369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementType: 1
+  connectors:
+  - {fileID: 7943659085147076968}
+  - {fileID: 1743344889835626776}

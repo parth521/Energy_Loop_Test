@@ -8,12 +8,12 @@ public class RotateBehaviour : MonoBehaviour
 
     private void OnEnable()
     {
-        userAction.OnClick += OnUserClick;
+       userAction.OnClick += OnUserClick;
     }
 
     private void OnDisable()
     {
-        userAction.OnClick -= OnUserClick;
+      userAction.OnClick -= OnUserClick;
     }
 
     private void OnUserClick(GameElement gameElement)

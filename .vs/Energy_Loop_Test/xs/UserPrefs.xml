@@ -1,25 +1,22 @@
 ﻿<Properties StartupConfiguration="{C0CB9BD6-C1B0-B20A-9593-3635667E5BB8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UserInput/UserInput.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/Interface/IUIAnimation.cs">
     <Files>
-      <File FileName="Assets/Scripts/Genrics/Singleton.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Genrics/Graph/Node.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/Genrics/Graph/Edge.cs" Line="13" Column="2" />
-      <File FileName="Assets/Scripts/Genrics/Graph/Graph.cs" Line="95" Column="39" />
-      <File FileName="Assets/GraphExample.cs" Line="24" Column="29" />
-      <File FileName="Assets/Scripts/GamePlay/Elements/Cables.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UserInput/UserInput.cs" Line="11" Column="24" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/Connectors.cs" Line="27" Column="87" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/ConnectionBehaviour.cs" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/GameElement.cs" />
+      <File FileName="Assets/Scripts/GamePlay/GameActions/GamePlayActions.cs" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/RotateBehaviour.cs" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/DataClass/LevelData.cs" Line="8" Column="51" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/Cables.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelManager.cs" Line="6" Column="1" />
+      <File FileName="Assets/Scripts/UI/UIManager.cs" Line="26" Column="10" />
+      <File FileName="Assets/Scripts/UI/BasePanel.cs" Line="7" Column="1" />
+      <File FileName="Assets/Scripts/UI/Interface/IUIAnimation.cs" Line="8" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Energy_Loop_Test" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bcec8c49-604a-43d5-8798-16d5f8adf9b9" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4110cd79-b7c7-41ff-bea2-3c2c12e9125d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

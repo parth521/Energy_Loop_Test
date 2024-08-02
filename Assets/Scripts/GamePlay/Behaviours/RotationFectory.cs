@@ -6,8 +6,8 @@ public class RotationFectory :Singleton<RotationFectory>
 {
     private readonly Dictionary<GameElementType, IRotation> strategies = new Dictionary<GameElementType, IRotation>
     {
-        { GameElementType.SquareCables, new SqureRotation() },
-        { GameElementType.HexagonCables, new HexagonRotation() }
+        { GameElementType.Square, new SqureRotation() },
+        { GameElementType.Hexagon, new HexagonRotation() }
         // Add more mappings here for other GameElementType
     };
 

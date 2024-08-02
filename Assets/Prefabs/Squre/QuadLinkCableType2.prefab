@@ -417,9 +417,9 @@ GameObject:
   - component: {fileID: 1645155015206057823}
   - component: {fileID: 8064499681619779093}
   - component: {fileID: 3371134527184110516}
-  - component: {fileID: 8997681777932324994}
+  - component: {fileID: -7377631809053196027}
   m_Layer: 5
-  m_Name: FourCornerNode
+  m_Name: QuadLinkCableType2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -490,7 +490,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8997681777932324994
+--- !u!114 &-7377631809053196027
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -499,10 +499,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6301719921024098722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34f043ba408d1463db58075dedbee824, type: 3}
+  m_Script: {fileID: 11500000, guid: 0136b0d31921340119805b10c77b9d19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementType: 1
 --- !u!1 &6416777005286437862
 GameObject:
   m_ObjectHideFlags: 0
