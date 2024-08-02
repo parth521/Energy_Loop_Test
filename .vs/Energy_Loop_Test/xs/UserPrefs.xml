@@ -1,17 +1,38 @@
 ﻿<Properties StartupConfiguration="{C0CB9BD6-C1B0-B20A-9593-3635667E5BB8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/Interface/IUIAnimation.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Graph/Graph.cs">
     <Files>
       <File FileName="Assets/Scripts/GamePlay/Elements/Connectors.cs" Line="27" Column="87" />
-      <File FileName="Assets/Scripts/GamePlay/Behaviours/ConnectionBehaviour.cs" />
-      <File FileName="Assets/Scripts/GamePlay/Elements/GameElement.cs" />
-      <File FileName="Assets/Scripts/GamePlay/GameActions/GamePlayActions.cs" Line="5" Column="1" />
-      <File FileName="Assets/Scripts/GamePlay/Behaviours/RotateBehaviour.cs" />
-      <File FileName="Assets/Scripts/GamePlay/LevelManager/DataClass/LevelData.cs" Line="8" Column="51" />
-      <File FileName="Assets/Scripts/GamePlay/Elements/Cables.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/ConnectionBehaviour.cs" Line="52" Column="10" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/GameElement.cs" Line="5" Column="23" />
+      <File FileName="Assets/Scripts/GamePlay/GameActions/GamePlayActions.cs" Line="9" Column="32" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/RotateBehaviour.cs" Line="22" Column="23" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/DataClass/LevelData.cs" Line="27" Column="53" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/Cables.cs" Line="8" Column="4" />
       <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelManager.cs" Line="6" Column="1" />
-      <File FileName="Assets/Scripts/UI/UIManager.cs" Line="26" Column="10" />
-      <File FileName="Assets/Scripts/UI/BasePanel.cs" Line="7" Column="1" />
-      <File FileName="Assets/Scripts/UI/Interface/IUIAnimation.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/UI/UIManager.cs" Line="41" Column="21" />
+      <File FileName="Assets/Scripts/UI/BasePanel.cs" Line="43" Column="35" />
+      <File FileName="Assets/Scripts/UI/Interface/IUIAnimation.cs" Line="6" Column="59" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animator.cs" Line="30" Column="17" />
+      <File FileName="Assets/Scripts/UI/GameplayUI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UI/GamePlayPanel.cs" Line="7" Column="20" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/UISlide.cs" Line="29" Column="53" />
+      <File FileName="Assets/Scripts/UI/UIPanels/SplshPanel.cs" Line="18" Column="34" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/FadeAnimation.cs" Line="5" Column="44" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/BaseUIAnimation.cs" Line="3" Column="23" />
+      <File FileName="Assets/Scripts/UserInput/UserInput.cs" Line="11" Column="8" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/FadeImageElement.cs" Line="5" Column="48" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/RotateAnimation.cs" Line="15" Column="36" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/ScaleElement.cs" Line="2" Column="19" />
+      <File FileName="Assets/Scripts/UI/UIPanels/SettingPanel.cs" Line="20" Column="6" />
+      <File FileName="Assets/Scripts/GamePlay/Other/GameElementTypes.cs" Line="7" Column="1" />
+      <File FileName="Assets/Editor/GameElementEditor.cs" Line="58" Column="29" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/Blub.cs" Line="13" Column="5" />
+      <File FileName="Assets/Scripts/GamePlay/Interfaces/IRotation.cs" Line="5" Column="47" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/RotationFectory.cs" Line="9" Column="48" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/SqureRotation.cs" Line="11" Column="6" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/HexagonRotation.cs" Line="7" Column="47" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/PowerSource.cs" Line="5" Column="30" />
+      <File FileName="Assets/Scripts/Graph/Graph.cs" Line="97" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

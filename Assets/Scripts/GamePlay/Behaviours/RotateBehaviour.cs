@@ -22,4 +22,5 @@ public class RotateBehaviour : MonoBehaviour
         strategy.Rotate(gameElement);
         gameElement.CheckConnection();
     }
+    
 }

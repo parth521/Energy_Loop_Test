@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class GameElement : MonoBehaviour
-{
-    [SerializeField] protected GameElementType elementType;
+{ 
     [SerializeField]protected List<Connectors> connectors = new List<Connectors>();
     [SerializeField] protected GamePlayActions gamePlayActions;
     [SerializeField]protected private List<int> connectedElements = new List<int>();
     public int elemetId;
     public bool isPowerSource = true;
     public bool hasPower;
-    public GameElementType ElementType
-    {
-        get => elementType;
-    }
+    public GameElementType ElementType;
+    public ConnectorType connectorType;
+
     public virtual void CheckConnection()
     {
         connectedElements.Clear();

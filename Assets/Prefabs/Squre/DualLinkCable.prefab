@@ -368,7 +368,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f043ba408d1463db58075dedbee824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementType: 1
   connectors:
   - {fileID: 7943659085147076968}
   - {fileID: 1743344889835626776}
+  gamePlayActions: {fileID: 11400000, guid: c1eb9c54eed7e45bfad6418fc0e1fe35, type: 2}
+  connectedElements: 
+  elemetId: 0
+  isPowerSource: 1
+  hasPower: 0
+  ElementType: 1
+  connectorType: 0

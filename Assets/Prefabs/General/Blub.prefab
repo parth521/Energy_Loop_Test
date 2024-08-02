@@ -166,14 +166,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1caa1aa0b1b94ee49dc6d99e09574a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementType: 1
   connectors: []
-  gamePlayActions: {fileID: 0}
+  gamePlayActions: {fileID: 11400000, guid: c1eb9c54eed7e45bfad6418fc0e1fe35, type: 2}
   connectedElements: 
   elemetId: 0
   isPowerSource: 1
   hasPower: 0
-  blubLockRotation: {fileID: 0}
+  ElementType: 1
+  connectorType: 5
+  blubLockRotation: {fileID: 6656030465851331296}
 --- !u!1 &6639819461264618801
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +327,7 @@ GameObject:
   - component: {fileID: 2925469230666256180}
   - component: {fileID: 6656030465851331296}
   m_Layer: 5
-  m_Name: lamp
+  m_Name: bulbimage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

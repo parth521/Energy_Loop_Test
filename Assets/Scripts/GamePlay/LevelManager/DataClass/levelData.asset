@@ -12,4 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89aef7685693c49d988de0f1feaa0589, type: 3}
   m_Name: levelData
   m_EditorClassIdentifier: 
-  levels: []
+  levels:
+  - elements:
+    - gameElement: 1
+      connectorType: 1
+      elementCount: 2
+      position:
+      - {x: 720, y: -994.6387}
+      - {x: 720, y: -594.6387}
+      rotaiton:
+      - {x: -0, y: 0, z: 0}
+      - {x: -0, y: 0, z: 0}
+    - gameElement: 1
+      connectorType: 4
+      elementCount: 1
+      position:
+      - {x: 320, y: -994.6387}
+      rotaiton:
+      - {x: -0, y: 0, z: 0}
+    - gameElement: 1
+      connectorType: 5
+      elementCount: 1
+      position:
+      - {x: 1120, y: -594.6387}
+      rotaiton:
+      - {x: -0, y: 0, z: 0}

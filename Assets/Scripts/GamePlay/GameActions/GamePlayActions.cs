@@ -6,4 +6,5 @@ using System.Collections.Generic;
 public class GamePlayActions : ScriptableObject
 {
     public Action<int,List<int>> onConnectionMade;
+    public Action onLevelStart;
 }

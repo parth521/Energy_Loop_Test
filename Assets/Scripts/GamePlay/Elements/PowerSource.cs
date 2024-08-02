@@ -4,9 +4,5 @@ using UnityEngine;
 
 public class PowerSource : GameElement
 {
-   
-    public override void CheckConnection()
-    {
-        throw new System.NotImplementedException();
-    }
+  
 }

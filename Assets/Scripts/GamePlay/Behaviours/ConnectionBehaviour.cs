@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
-
+using System.Collections;
+using System.Linq;
 public class ConnectionBehaviour : MonoBehaviour
 {
     public List<GameElement> gameElements = new List<GameElement>();
@@ -14,15 +15,24 @@ public class ConnectionBehaviour : MonoBehaviour
             gameElements.Add(gameElement);
         }
         SetGraph();
+        
     }
     private void OnEnable()
     {
+       
         gamePlayActions.onConnectionMade += OnConnectionMade;
+        gamePlayActions.onLevelStart += OnLevelStart;
     }
     private void OnDisable()
     {
         gamePlayActions.onConnectionMade -= OnConnectionMade;
+        gamePlayActions.onLevelStart -= OnLevelStart;
     }
+    private void OnLevelStart()
+    {
+        gameElements.ForEach(item => item.CheckConnection());
+    }
+    
     private void SetGraph()
     {
         graph = new Graph(gameElements.Count);
@@ -36,6 +46,7 @@ public class ConnectionBehaviour : MonoBehaviour
     }
     private void OnConnectionMade(int from, List<int> connectedNodes)
     {
+        
         graph.DisconnectAllNodesFrom(from);
         for (int connectedNodeIndex = 0; connectedNodeIndex < connectedNodes.Count; connectedNodeIndex++)
         {

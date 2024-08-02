@@ -1,26 +1,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class UIManager : Singleton<UIManager>
 {
-    public static UIManager Instance;
+   [SerializeField]private BasePanel initPanel;
+   private Dictionary<PanelName, BasePanel> panels = new Dictionary<PanelName, BasePanel>();
 
-    private Dictionary<string, BasePanel> panels = new Dictionary<string, BasePanel>();
-
-    private void Awake()
+    public void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+       // panels.Add(initPanel.panelName, initPanel);
     }
-
-    public void RegisterPanel(string panelName, BasePanel panel)
+    private void OnEnable()
+    {
+        foreach (var panel in panels)
+        {
+            panel.Value.Hide();
+        }
+        ShowPanel(PanelName.splashPanel);
+    }
+    public void RegisterPanel(PanelName panelName, BasePanel panel)
     {
         if (!panels.ContainsKey(panelName))
         {
@@ -28,7 +26,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void ShowPanel(string panelName)
+    public void ShowPanel(PanelName panelName)
     {
         if (panels.TryGetValue(panelName, out BasePanel panel))
         {
@@ -36,11 +34,19 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void HidePanel(string panelName)
+    public void HidePanel(PanelName panelName)
     {
         if (panels.TryGetValue(panelName, out BasePanel panel))
         {
             panel.Hide();
         }
     }
+}
+public enum PanelName
+{
+    none,
+    splashPanel,
+    gmmePlayPanel,
+    menuPanel,
+    settingPanel
 }

@@ -16,11 +16,13 @@ public class Levels
 public class Level
 {
     public List<Elements> elements;
+    public List<Vector3> solutinsRotation;
 }
 [Serializable]
 public class Elements
 {
-    public GameElement gameElement;
-    public Vector3 position;
-    public Vector3 rotation;
+    public GameElementType gameElement;
+    public ConnectorType connectorType;
+    public int elementCount;
+    public List<Vector2> position = new List<Vector2>();
 }

@@ -93,6 +93,13 @@ MonoBehaviour:
   elementType: 4
   connectors:
   - {fileID: 8019405839745871257}
+  gamePlayActions: {fileID: 11400000, guid: c1eb9c54eed7e45bfad6418fc0e1fe35, type: 2}
+  connectedElements: 
+  elemetId: 0
+  isPowerSource: 1
+  hasPower: 0
+  ElementType: 1
+  connectorType: 4
 --- !u!1 &4284672652960026252
 GameObject:
   m_ObjectHideFlags: 0

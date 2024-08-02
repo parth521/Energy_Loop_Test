@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3209051556489630570}
   - component: {fileID: 5887365575564284387}
   - component: {fileID: 614355438654821053}
-  - component: {fileID: -2954450287113665612}
+  - component: {fileID: 2039554009662334804}
   m_Layer: 5
   m_Name: SingleLinkCable
   m_TagString: Untagged
@@ -79,7 +79,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-2954450287113665612
+--- !u!114 &2039554009662334804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,9 +88,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1411064971117765653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0136b0d31921340119805b10c77b9d19, type: 3}
+  m_Script: {fileID: 11500000, guid: 34f043ba408d1463db58075dedbee824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elementType: 0
+  connectors: []
+  gamePlayActions: {fileID: 11400000, guid: c1eb9c54eed7e45bfad6418fc0e1fe35, type: 2}
+  connectedElements: 
+  elemetId: 0
+  isPowerSource: 1
+  hasPower: 0
+  ElementType: 1
+  connectorType: 0
 --- !u!1 &5179880461382070403
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,7 +234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementType: 0
   rayLength: 10
   layerMask:
     serializedVersion: 2
@@ -288,7 +296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementType: 0
   rayLength: 10
   layerMask:
     serializedVersion: 2
@@ -353,7 +360,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementType: 0
   rayLength: 10
   layerMask:
     serializedVersion: 2
@@ -416,7 +422,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementType: 0
   rayLength: 10
   layerMask:
     serializedVersion: 2
