@@ -5,6 +5,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "levelData", menuName = "Data/levelData")]
 public class LevelData : ScriptableObject
 {
+    public int currentLevel;
+    public int totalClearedLevel;
     public List<Level> levels = new List<Level>();
 }
 
@@ -19,8 +21,8 @@ public class Level
 public class ElementData
 {
     public string id;
-    public GameElementType gameElement;
-    public ConnectorType connectorType;
+    public GameElementType gameElementType;
+    public bool isHexagonSetup;
     public Vector2 position;
     public Vector3 rotation;
     public Vector3 solutionsRotation;

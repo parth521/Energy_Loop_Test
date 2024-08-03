@@ -1,11 +1,5 @@
 public enum GameElementType
 {
-    None,
-    Square,
-    Hexagon
-}
-public enum ConnectorType
-{
     SingleLink,
     DualLink,
     TriLink,

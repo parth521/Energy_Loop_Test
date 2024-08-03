@@ -6,15 +6,11 @@ public class UIManager : Singleton<UIManager>
    [SerializeField]private BasePanel initPanel;
    private Dictionary<PanelName, BasePanel> panels = new Dictionary<PanelName, BasePanel>();
 
-    public void Awake()
-    {
-       // panels.Add(initPanel.panelName, initPanel);
-    }
-    private void OnEnable()
+    private void Start()
     {
         foreach (var panel in panels)
         {
-            panel.Value.Hide();
+         panel.Value.Hide();
         }
         ShowPanel(PanelName.splashPanel);
     }

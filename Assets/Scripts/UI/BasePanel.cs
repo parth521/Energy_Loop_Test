@@ -19,28 +19,31 @@ public abstract class BasePanel : MonoBehaviour
         {
             throw new System.Exception(transform.GetChild(0).name+" missing Canvas group component");
         }
+       
     }
 
     public virtual void Show()
     {
         canvas.enabled = true;
+        canvasGroup.blocksRaycasts = true;
         canvas.sortingOrder = highSortingOrder;
         uiAnimator.PlayShowAnimations(OnShowAnimationComplete);
     }
 
     public virtual void Hide()
     {
+        canvasGroup.blocksRaycasts = false;
         canvas.sortingOrder = lowSortingOrder;
         uiAnimator.PlayHideAnimations(OnHideAnimationComplete);
     }
     protected virtual void OnShowAnimationComplete()
     {
         //do something
-        canvasGroup.blocksRaycasts = true;
+       
     }
     protected virtual void OnHideAnimationComplete()
     {
-        canvasGroup.blocksRaycasts = false;   
+       
     }
 
 

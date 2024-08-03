@@ -52,15 +52,17 @@ public class GameElementEditor : EditorWindow
             string id = idCounter.ToString();
             idCounter++;
 
-            Vector3 randomRotation = GenerateRandomRotation(solutionsRotation);
+            Vector3 rotation = gameElement.elementType == GameElementType.PowerSource
+                ? solutionsRotation
+                : GenerateRandomRotation(solutionsRotation);
 
             ElementData elementData = new ElementData
             {
                 id = id,
-                gameElement = gameElement.ElementType,
-                connectorType = gameElement.connectorType,
+                gameElementType = gameElement.elementType,
+                isHexagonSetup = gameElement.UseHexagonRotation,
                 position = anchoredPosition,
-                rotation = randomRotation,
+                rotation = rotation,
                 solutionsRotation = solutionsRotation
             };
 

@@ -18,9 +18,12 @@ public class RotateBehaviour : MonoBehaviour
 
     private void OnUserClick(GameElement gameElement)
     {
-        var strategy = RotationFectory.Instance.GetStrategy(gameElement.ElementType);
-        strategy.Rotate(gameElement);
-        gameElement.CheckConnection();
+        if (gameElement is IRotatable rotatable)
+        {
+            var strategy = RotationFectory.Instance.GetStrategy(gameElement);
+            rotatable.SetRotationStrategy(strategy);
+            rotatable.Rotate();
+        }
     }
     
 }

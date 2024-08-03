@@ -1,36 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
-public abstract class GameElement : MonoBehaviour
-{ 
-    [SerializeField]protected List<Connectors> connectors = new List<Connectors>();
-    [SerializeField] protected GamePlayActions gamePlayActions;
-    [SerializeField]protected private List<int> connectedElements = new List<int>();
-    public int elemetId;
-    public bool isPowerSource = true;
-    public bool hasPower;
-    public GameElementType ElementType;
-    public ConnectorType connectorType;
-
+public abstract class GameElement : MonoBehaviour, IConnectable
+{
+    public int ElementId { get; set; }
+    public bool IsPowerSource { get; set; }
+    public bool HasPower { get; set; }
+    public bool UseHexagonRotation;
+    public GameElementType elementType;
+    [SerializeField] protected List<Connectors> connectors = new List<Connectors>();
+   
     public virtual void CheckConnection()
     {
-        connectedElements.Clear();
-        foreach (Connectors connector in connectors)
+        foreach (var connector in connectors)
         {
-            GameElement gameElement = connector.DetectConnection();
-            if (gameElement != null)
+            var gameElement = connector.DetectConnection();
+
+            if(gameElement != null)
+            Debug.LogError(gameElement.gameObject.name);
+
+            if (gameElement != null && gameElement.IsPowerSource)
             {
-                if (gameElement.isPowerSource)
-                {
-                    hasPower = true;
-                }
-                connectedElements.Add(gameElement.elemetId);
+                HasPower = true;
             }
         }
-     
-        gamePlayActions.onConnectionMade?.Invoke(this.elemetId, connectedElements);
-
     }
-
 }

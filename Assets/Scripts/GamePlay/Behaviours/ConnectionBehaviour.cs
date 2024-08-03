@@ -38,8 +38,8 @@ public class ConnectionBehaviour : MonoBehaviour
         graph = new Graph(gameElements.Count);
         for (int elementIndex = 0; elementIndex < gameElements.Count; elementIndex++)
         {
-            gameElements[elementIndex].elemetId = elementIndex;
-            bool isPowerNode = gameElements[elementIndex].isPowerSource; // Assuming GameElement has a bool isPowerNode
+           // gameElements[elementIndex].ElementId = elementIndex;
+            bool isPowerNode = gameElements[elementIndex].IsPowerSource; // Assuming GameElement has a bool isPowerNode
             Node node = new Node(elementIndex, isPowerNode);
             graph.AddNode(node);
         }

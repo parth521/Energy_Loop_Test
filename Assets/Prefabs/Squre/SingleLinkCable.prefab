@@ -36,10 +36,10 @@ RectTransform:
   - {fileID: 7104750515802545767}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 320, y: -594.6387}
-  m_SizeDelta: {x: 400, y: 400}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5887365575564284387
 CanvasRenderer:
@@ -91,14 +91,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f043ba408d1463db58075dedbee824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectors: []
-  gamePlayActions: {fileID: 11400000, guid: c1eb9c54eed7e45bfad6418fc0e1fe35, type: 2}
-  connectedElements: 
-  elemetId: 0
-  isPowerSource: 1
-  hasPower: 0
-  ElementType: 1
-  connectorType: 0
+  UseHexagonRotation: 0
+  elementType: 0
+  connectors:
+  - {fileID: 4523192323612505037}
+  - {fileID: 3736151337708163648}
 --- !u!1 &5179880461382070403
 GameObject:
   m_ObjectHideFlags: 0

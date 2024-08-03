@@ -114,7 +114,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1120, y: -594.6387}
-  m_SizeDelta: {x: 400, y: 400}
+  m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5231772955612541091
 CanvasRenderer:
@@ -166,14 +166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1caa1aa0b1b94ee49dc6d99e09574a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectors: []
-  gamePlayActions: {fileID: 11400000, guid: c1eb9c54eed7e45bfad6418fc0e1fe35, type: 2}
-  connectedElements: 
-  elemetId: 0
-  isPowerSource: 1
-  hasPower: 0
-  ElementType: 1
-  connectorType: 5
+  UseHexagonRotation: 0
+  elementType: 6
+  connectors:
+  - {fileID: 1635353517728841837}
   blubLockRotation: {fileID: 6656030465851331296}
 --- !u!1 &6639819461264618801
 GameObject:
@@ -209,10 +205,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 214423241398740487}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: 0}
-  m_SizeDelta: {x: 1.5122, y: 10.1681}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0.7561035, y: 0}
+  m_SizeDelta: {x: 1.512207, y: 10.1681}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &129455834707364048
 CanvasRenderer:
@@ -309,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayLength: 2
+  rayLength: 10
   layerMask:
     serializedVersion: 2
     m_Bits: 32

@@ -14,6 +14,7 @@ public class Connectors : MonoBehaviour
         if(hit.collider!=null)
         {
             GameElement gameElement = hit.collider.transform.parent.GetComponent<GameElement>();
+             
             if (gameElement != null)
             {
                 return gameElement;
@@ -21,7 +22,6 @@ public class Connectors : MonoBehaviour
         }
         return null;
     }
-   
     public RaycastHit2D PerformRaycast(Vector2 origin, Vector2 direction)
     {
         RaycastHit2D hit = Physics2D.Raycast(origin, direction, rayLength, layerMask);

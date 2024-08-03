@@ -9,11 +9,7 @@ public class UISlide :BaseUIAnimation
     [SerializeField] private float duration;
     [SerializeField] private Ease easeMovementType;
     [SerializeField] private float delay;
-    protected override void Awake()
-    {
-        base.Awake();
-        rectTransform.anchoredPosition = hidePosition;
-    }
+ 
     public override void PlayHideAnimation(Action callback)
     {
         rectTransform.anchoredPosition = showPosition;
