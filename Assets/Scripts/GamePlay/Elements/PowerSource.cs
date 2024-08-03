@@ -1,8 +1,21 @@
-using System.Collections;
+
 using System.Collections.Generic;
-using UnityEngine;
+
 
 public class PowerSource : GameElement
 {
-   
+    public override void TurnPowerOn()
+    {
+      //no need to propogate as it's already propogated.
+    }
+
+    private void OnEnable()
+    {
+        IsPowerSource = true;
+    }
+    public override void TurnPowerOff()
+    {
+        //no need to propogate as it's already propogated.
+    }
+
 }

@@ -49,7 +49,7 @@ public class GameElementEditor : EditorWindow
             Vector2 anchoredPosition = rectTransform != null ? rectTransform.anchoredPosition : Vector2.zero;
             Vector3 solutionsRotation = gameElement.transform.localEulerAngles;
 
-            string id = idCounter.ToString();
+            int id = idCounter;
             idCounter++;
 
             Vector3 rotation = gameElement.elementType == GameElementType.PowerSource

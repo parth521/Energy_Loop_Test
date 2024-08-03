@@ -20,7 +20,7 @@ public class Level
 [Serializable]
 public class ElementData
 {
-    public string id;
+    public int id;
     public GameElementType gameElementType;
     public bool isHexagonSetup;
     public Vector2 position;

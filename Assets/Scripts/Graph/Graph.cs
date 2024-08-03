@@ -1,11 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class Graph
 {
     private int[,] adjacencyMatrix;
     private List<Node> nodes;
-
+    public Action<int> TurnOnNode;
+    public Action<int> TurnOffNode;
     public Graph(int size)
     {
         adjacencyMatrix = new int[size, size];
@@ -61,10 +62,10 @@ public class Graph
             if (!node.IsPowerNode)
             {
                 node.IsPowered = false;
+                TurnOffNode?.Invoke(node.Id);
             }
         }
 
-        // BFS or DFS to propagate power from power nodes
         foreach (var node in nodes)
         {
             if (node.IsPowerNode)
@@ -83,7 +84,7 @@ public class Graph
         {
             Node current = queue.Dequeue();
             current.IsPowered = true;
-
+            TurnOnNode?.Invoke(current.Id);
             for (int i = 0; i < nodes.Count; i++)
             {
                 if (adjacencyMatrix[current.Id, i] == 1 && !nodes[i].IsPowered)
@@ -105,8 +106,7 @@ public class Graph
             }
             matrixString += "\n";
         }
-        Debug.Log(matrixString);
-
+    
         string powerStatus = "Power Status:\n";
         foreach (var node in nodes)
         {

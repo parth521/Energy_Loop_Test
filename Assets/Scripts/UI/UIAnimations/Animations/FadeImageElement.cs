@@ -9,6 +9,7 @@ public class FadeImageElement : BaseUIAnimation
     private int to;
    [SerializeField] private Image Image;
     private Color imageColor;
+    [SerializeField]private float delay;
 
     protected override void Awake()
     {
@@ -39,6 +40,7 @@ public class FadeImageElement : BaseUIAnimation
     {
         // DOVirtual.Float to tween a float value
         Tween fadeTween = DOVirtual.Float(from, to, duration, OnLerpValueChanged);
+        fadeTween.SetDelay(delay);
         fadeTween.OnComplete(() => callback?.Invoke());
     }
     private void OnLerpValueChanged(float value)

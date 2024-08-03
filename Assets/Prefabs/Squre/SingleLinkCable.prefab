@@ -93,9 +93,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UseHexagonRotation: 0
   elementType: 0
+  gamePlayActions: {fileID: 11400000, guid: c1eb9c54eed7e45bfad6418fc0e1fe35, type: 2}
   connectors:
   - {fileID: 4523192323612505037}
   - {fileID: 3736151337708163648}
+  turnOffColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.5882353}
+  turnOnColor: {r: 1, g: 1, b: 1, a: 1}
+  cableImage: {fileID: 0}
 --- !u!1 &5179880461382070403
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,6 +188,7 @@ GameObject:
   - component: {fileID: 4523192323612505037}
   - component: {fileID: 727255885175930929}
   - component: {fileID: 5347319125408039161}
+  - component: {fileID: 7770309382154609576}
   m_Layer: 5
   m_Name: Point
   m_TagString: Untagged
@@ -207,7 +212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -7.5, y: 0.000000059604645}
+  m_AnchoredPosition: {x: -3, y: 0.000000059604645}
   m_SizeDelta: {x: 15, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8794516400863299130
@@ -230,11 +235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayLength: 10
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  origin: {x: 0, y: 0}
 --- !u!61 &727255885175930929
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -264,7 +264,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -292,11 +292,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayLength: 10
-  layerMask:
+--- !u!50 &7770309382154609576
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7207560016478417105}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 32
-  origin: {x: 0, y: 0}
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &9035302458142341347
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,6 +332,7 @@ GameObject:
   - component: {fileID: 3736151337708163648}
   - component: {fileID: 4407569495007613450}
   - component: {fileID: 11667414750515492}
+  - component: {fileID: 7000228594757387049}
   m_Layer: 5
   m_Name: Point2
   m_TagString: Untagged
@@ -333,7 +356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 7.5, y: 0}
+  m_AnchoredPosition: {x: 3, y: 0}
   m_SizeDelta: {x: 15, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7876227259149928732
@@ -356,11 +379,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayLength: 10
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  origin: {x: 0, y: 0}
 --- !u!61 &4407569495007613450
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -390,7 +408,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -418,8 +436,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95f1148f47b4f4fbd8a5b0a5b08a09e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayLength: 10
-  layerMask:
+--- !u!50 &7000228594757387049
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9035302458142341347}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 32
-  origin: {x: 0, y: 0}
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

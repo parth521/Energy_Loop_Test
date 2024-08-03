@@ -1,8 +1,21 @@
 ﻿<Properties StartupConfiguration="{C0CB9BD6-C1B0-B20A-9593-3635667E5BB8}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Graph/Graph.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GamePlay/Elements/Cable.cs" Line="24" Column="6" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/GameElement.cs" Line="17" Column="31" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/Connectors.cs" Line="21" Column="26" />
+      <File FileName="Assets/Scripts/Graph/Graph.cs" Line="86" Column="42" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/PowerSource.cs" Line="5" Column="39" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/Blub.cs" Line="3" Column="24" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/ConnectionBehaviour.cs" Line="47" Column="73" />
+      <File FileName="Assets/Scripts/GamePlay/IConnectable.cs" />
+      <File FileName="Assets/Scripts/GamePlay/GameActions/GamePlayActions.cs" Line="8" Column="39" />
+      <File FileName="Assets/Scripts/Graph/Node.cs" Line="4" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d19ca5c1-76c5-4aa1-882a-27c20ca1b7be" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="aff9c9c1-ff35-41a8-ae70-df99c0d0fe23" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

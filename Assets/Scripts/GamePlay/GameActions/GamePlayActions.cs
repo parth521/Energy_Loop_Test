@@ -5,6 +5,7 @@ using System.Collections.Generic;
 [CreateAssetMenu(fileName = "gameAction", menuName = "Actions/gameAction")]
 public class GamePlayActions : ScriptableObject
 {
-    public Action<int,List<int>> onConnectionMade;
+    public Action<int,int> onConnectionMade;
+    public Action<int,int> onConnectionLost;
     public Action onLevelStart;
 }

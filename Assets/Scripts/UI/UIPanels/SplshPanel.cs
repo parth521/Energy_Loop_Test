@@ -18,12 +18,12 @@ public class SplshPanel : BasePanel
     protected override void OnShowAnimationComplete()
     {
         base.OnShowAnimationComplete();
+        UIManager.Instance.ShowPanel(PanelName.gmmePlayPanel);
         levelActions.generateLevel?.Invoke();
         
     }
     private void OnLevelGenerated()
     {
         UIManager.Instance.HidePanel(PanelName.splashPanel);
-        UIManager.Instance.ShowPanel(PanelName.gmmePlayPanel);
     }
 }
