@@ -9,6 +9,7 @@ public class ScaleElement : BaseUIAnimation
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private float duration;
     [SerializeField] private Ease scalEase;
+
     public override void PlayShowAnimation(Action callback)
     {
         rectTransform.localScale = hideScale;

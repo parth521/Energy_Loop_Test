@@ -1,16 +1,15 @@
 using UnityEngine.UI;
 using UnityEngine;
-
+using System.Collections.Generic;
 public class Cable : GameElement, IRotatable
 {
     private IRotationStrategy rotationStrategy;
     [SerializeField]private Color turnOffColor;
     [SerializeField] private Color turnOnColor;
-    [SerializeField] private Image cableImage;
+    [SerializeField]private List<Image> cables = new List<Image>();
     private void OnEnable()
     {
-        cableImage = GetComponent<Image>();
-        cableImage.color = turnOffColor;
+        cables.ForEach(cable => cable.color=turnOffColor);
     }
     public void SetRotationStrategy(IRotationStrategy strategy)
     {
@@ -24,13 +23,13 @@ public class Cable : GameElement, IRotatable
 
     public override void TurnPowerOn()
     {
-        cableImage.color = turnOnColor;
+        cables.ForEach(cable => cable.color = turnOnColor);
         HasPower = true;
         gamePlayActions.onMoveMade?.Invoke();
     }
     public override void TurnPowerOff()
     {
-        cableImage.color = turnOffColor;
+        cables.ForEach(cable => cable.color = turnOffColor);
         HasPower = false;
     }
 }

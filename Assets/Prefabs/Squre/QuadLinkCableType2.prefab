@@ -544,7 +544,11 @@ MonoBehaviour:
   - {fileID: 7707569447636304620}
   turnOffColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.5882353}
   turnOnColor: {r: 1, g: 1, b: 1, a: 1}
-  cableImage: {fileID: 0}
+  cables:
+  - {fileID: 1322404985334891585}
+  - {fileID: 7174090365556949204}
+  - {fileID: 8596931625157121598}
+  - {fileID: 5541861854874858056}
 --- !u!1 &6416777005286437862
 GameObject:
   m_ObjectHideFlags: 0

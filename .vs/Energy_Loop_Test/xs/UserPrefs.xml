@@ -1,22 +1,22 @@
 ﻿<Properties StartupConfiguration="{C0CB9BD6-C1B0-B20A-9593-3635667E5BB8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/UIManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/UIPanels/HintPanel.cs">
     <Files>
-      <File FileName="Assets/Scripts/GamePlay/Elements/Cable.cs" Line="29" Column="46" />
-      <File FileName="Assets/Scripts/GamePlay/Elements/GameElement.cs" Line="11" Column="18" />
-      <File FileName="Assets/Scripts/GamePlay/Elements/Connectors.cs" />
-      <File FileName="Assets/Scripts/Graph/Graph.cs" Line="68" Column="1" />
-      <File FileName="Assets/Scripts/GamePlay/Elements/PowerSource.cs" Line="16" Column="25" />
-      <File FileName="Assets/Scripts/GamePlay/Elements/Blub.cs" Line="42" Column="26" />
-      <File FileName="Assets/Scripts/GamePlay/Behaviours/ConnectionBehaviour.cs" Line="74" Column="9" />
-      <File FileName="Assets/Scripts/GamePlay/IConnectable.cs" />
-      <File FileName="Assets/Scripts/GamePlay/GameActions/GamePlayActions.cs" Line="11" Column="30" />
-      <File FileName="Assets/Scripts/Graph/Node.cs" />
-      <File FileName="Assets/Scripts/GamePlay/GameData.cs" Line="8" Column="92" />
-      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelManager.cs" Line="46" Column="48" />
-      <File FileName="Assets/Scripts/GamePlay/Rules/Rules.cs" Line="28" Column="49" />
-      <File FileName="Assets/Scripts/UserInput/SO_Actions/UserInputActions.cs" Line="7" Column="34" />
-      <File FileName="Assets/Scripts/UserInput/UserInput.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/UI/UIManager.cs" Line="48" Column="17" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelManager.cs" Line="48" Column="21" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/ScaleElement.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/ConnectionBehaviour.cs" Line="38" Column="28" />
+      <File FileName="Assets/Scripts/Graph/Graph.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/GameElement.cs" Line="25" Column="1" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelActions.cs" Line="7" Column="19" />
+      <File FileName="Assets/Scripts/UI/UIPanels/SettingPanel.cs" Line="38" Column="6" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/DataClass/LevelData.cs" Line="10" Column="51" />
+      <File FileName="Assets/Scripts/GamePlay/GameData.cs" Line="8" Column="44" />
+      <File FileName="Assets/Scripts/UI/UIPanels/GamePlayPanel.cs" Line="19" Column="37" />
+      <File FileName="Assets/Scripts/GamePlay/Rules/Rules.cs" Line="20" Column="6" />
+      <File FileName="Assets/Scripts/UI/UIPanels/LevelLoadingPanel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UI/UIPanels/HintPanel.cs" Line="11" Column="9" />
+      <File FileName="Assets/Scripts/UI/BasePanel.cs" Line="8" Column="16" />
+      <File FileName="Assets/Scripts/UI/UIManager.cs" Line="49" Column="14" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/Animator.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -6,5 +6,7 @@ public enum GameElementType
     QuardLinkType1,
     QuardLinkType2,
     PowerSource,
-    Bulb
+    Bulb,
+    HexaSingleLine,
+    HexaLamp
 }

@@ -40,21 +40,11 @@ public class SettingPanel : BasePanel
     }
     public void OnNextLevel()
     {
-        if (levelData.currentLevel < levelData.totalClearedLevel)
-        {
-            levelData.currentLevel++;
-            UpdateButtonStates();
-        }
+       
     }
     public void OnPreviousLevel()
     {
-        if (levelData.currentLevel > 0)
-        {
-            levelData.currentLevel--;
-            UpdateButtonStates();
-        }
-        levelActions.generateLevel();
-      
+     
     }
     public void OnMuteUnMuteToggle()
     {
@@ -72,7 +62,7 @@ public class SettingPanel : BasePanel
         previousButton.interactable =levelData.currentLevel > 0;
 
         // Enable or disable next button
-        nextButton.interactable = levelData.currentLevel < levelData.totalClearedLevel;
+       // nextButton.interactable = levelData.currentLevel < levelData.totalClearedLevel;
     }
 
 }

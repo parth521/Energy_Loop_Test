@@ -20,3 +20,12 @@ MonoBehaviour:
   - {fileID: 5403739241135373769, guid: 22125871282bf44b8a4cf499bef3c58f, type: 3}
   - {fileID: 2039554009662334804, guid: 0c7b8d40b2c9c4aa2ae50593cd52d8e4, type: 3}
   - {fileID: 6922388222722699032, guid: f8dd502d8f576485f80c7e9ad8632502, type: 3}
+  - {fileID: 2108796064696867993, guid: a7ebc8994d7894f78bf433515c8de083, type: 3}
+  - {fileID: 6362026490189218425, guid: 71d1e1a2580b54f499e3ccecfaf4e41e, type: 3}
+  inGameElements:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

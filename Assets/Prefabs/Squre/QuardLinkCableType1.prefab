@@ -683,7 +683,10 @@ MonoBehaviour:
   connectors: []
   turnOffColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 0.5882353}
   turnOnColor: {r: 1, g: 1, b: 1, a: 1}
-  cableImage: {fileID: 0}
+  cables:
+  - {fileID: 2099854506996217913}
+  - {fileID: 4685913624100834243}
+  - {fileID: 6932571626457794840}
 --- !u!1 &6403101908608436002
 GameObject:
   m_ObjectHideFlags: 0

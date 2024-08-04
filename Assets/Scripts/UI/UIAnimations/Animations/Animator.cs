@@ -1,12 +1,14 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class UIAnimator : MonoBehaviour
 {
     public List<BaseUIAnimation> uIAnimations = new List<BaseUIAnimation>();
     private int showAimationCount;
     private int hideAnimationCount;
+    public UnityEvent onShowComplete;
+    public UnityEvent onHideComplete;
     public void RegisterUIAnimations(BaseUIAnimation uIAnimation)
     {
         uIAnimations.Add(uIAnimation);
@@ -41,6 +43,7 @@ public class UIAnimator : MonoBehaviour
         if(showAimationCount==0)
         {
             callback?.Invoke();
+            onShowComplete?.Invoke();
         }
     }
     private void onHideAnimationComplete(Action callback)
@@ -49,6 +52,7 @@ public class UIAnimator : MonoBehaviour
         if(hideAnimationCount==0)
         {
             callback?.Invoke();
+            onHideComplete?.Invoke();
         }
     }
 }

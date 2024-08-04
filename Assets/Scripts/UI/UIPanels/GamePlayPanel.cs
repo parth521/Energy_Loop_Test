@@ -11,6 +11,12 @@ public class GamePlayPanel : BasePanel
     {
         base.Show();
         gamePlayActions.onLevelStart?.Invoke();
+        UIManager.Instance.ShowPanel(PanelName.hintPanel);
+    }
+    public override void Hide()
+    {
+        base.Hide();
+        UIManager.Instance.HidePanel(PanelName.hintPanel);
     }
     public void OnSetting()
     {

@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections.Generic;
-using System.Linq;
 public abstract class GameElement : MonoBehaviour
 {
     public int ElementId { get; set; }
@@ -13,7 +12,7 @@ public abstract class GameElement : MonoBehaviour
     [SerializeField] protected List<Connectors> connectors = new List<Connectors>();
 
     public virtual void OnConnect(GameElement fromElement,GameElement toElement)
-    {
+    { 
         gamePlayActions.onConnectionMade?.Invoke(fromElement.ElementId, toElement.ElementId);
     }
     public virtual void OnDisConnect(GameElement fromElement, GameElement toElement)

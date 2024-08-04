@@ -35,10 +35,11 @@ public class ConnectionBehaviour : MonoBehaviour
     {
         graph.TurnOnNode -= TurnOnPower;
         graph.TurnOffNode -= TurnOffPower;
+        graph.ResetGraph();
     }
     private void OnLevelGenerated()
     {
-      
+       
         SetGraph();
         graph.TurnOnNode += TurnOnPower;
         graph.TurnOffNode += TurnOffPower;

@@ -6,8 +6,9 @@ using UnityEngine;
 public class LevelData : ScriptableObject
 {
     public int currentLevel;
-    public int totalClearedLevel;
+    public int unlockedLevel;
     public List<Level> levels = new List<Level>();
+   
 }
 
 [Serializable]

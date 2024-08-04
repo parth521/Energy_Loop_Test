@@ -9,19 +9,20 @@ public class Rules : MonoBehaviour
     private void OnEnable()
     {
         gamePlayActions.onMoveMade += CheckRules;
-        levelActions.generateLevel += OnGenerateLevel;
+        levelActions.onLevelGenerated += OnNewLevelGenerated;
     }
     private void OnDisable()
     {
         gamePlayActions.onMoveMade -= CheckRules;
-        levelActions.generateLevel -= OnGenerateLevel;
+        levelActions.onLevelGenerated -= OnNewLevelGenerated;
     }
-    private void OnGenerateLevel()
+    private void OnNewLevelGenerated()
     {
         isLevelClear = false;
     }
     public void CheckRules()
     {
+        Debug.LogError(isLevelClear + "islevel clear");
         if(gameData.inGameElements.TrueForAll(x=>x.HasPower)&& !isLevelClear)
         {
             isLevelClear = true;

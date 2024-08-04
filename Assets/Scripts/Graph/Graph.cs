@@ -40,7 +40,29 @@ public class Graph
             PropagatePower();
         }
     }
+    public void ResetGraph()
+    {
+        // Clear the adjacency matrix
+        Array.Clear(adjacencyMatrix, 0, adjacencyMatrix.Length);
 
+        // Reset power status of all nodes
+        foreach (var node in nodes)
+        {
+            node.IsPowered = false;
+            TurnOffNode?.Invoke(node.Id);
+        }
+
+        // Reset power status of power nodes
+        foreach (var node in nodes)
+        {
+            if (node.IsPowerNode)
+            {
+                TurnOnNode?.Invoke(node.Id);
+                node.IsPowered = true;
+                PropagatePowerFrom(node);
+            }
+        }
+    }
     public void DisconnectAllNodesFrom(int nodeId)
     {
         if (nodeId < nodes.Count)
