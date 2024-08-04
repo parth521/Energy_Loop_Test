@@ -8,4 +8,5 @@ public class GamePlayActions : ScriptableObject
     public Action<int,int> onConnectionMade;
     public Action<int,int> onConnectionLost;
     public Action onLevelStart;
+    public Action onMoveMade;
 }

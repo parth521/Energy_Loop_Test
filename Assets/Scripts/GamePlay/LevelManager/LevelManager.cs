@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Linq;
+
 public class LevelManager : MonoBehaviour
 {
     public LevelData levels;
@@ -10,14 +10,17 @@ public class LevelManager : MonoBehaviour
     {
         levelActions.generateLevel += OnGenerateLevel;
         levelActions.resetLevel += ResetLevel;
+        levelActions.onLevelClear += OnLevelClear;
     }
     private void OnDisable()
     {
         levelActions.generateLevel -= OnGenerateLevel;
         levelActions.resetLevel -= ResetLevel;
+        levelActions.onLevelClear -= OnLevelClear;
     }
     private void OnGenerateLevel()
     {
+        gameData.inGameElements.Clear();
         Level level = levels.levels[levels.currentLevel];
          for(int elementIndex=0;elementIndex<level.elements.Count; elementIndex++)
         {
@@ -29,11 +32,18 @@ public class LevelManager : MonoBehaviour
            currentGameElement.GetComponent<RectTransform>().localEulerAngles = level.elements[elementIndex].rotation;
            currentGameElement.UseHexagonRotation = level.elements[elementIndex].isHexagonSetup;
             currentGameElement.ElementId = level.elements[elementIndex].id;
+            gameData.inGameElements.Add(currentGameElement);
         }
         levelActions.onLevelGenerated?.Invoke();
     }
     private void ResetLevel()
     {
         OnGenerateLevel();
+    }
+    private void OnLevelClear()
+    {
+        levels.currentLevel++;
+        UIManager.Instance.HidePanel(PanelName.gmmePlayPanel);
+        UIManager.Instance.ShowPanel(PanelName.loadingPanel);
     }
 }

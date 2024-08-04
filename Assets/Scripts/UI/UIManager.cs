@@ -44,5 +44,6 @@ public enum PanelName
     splashPanel,
     gmmePlayPanel,
     menuPanel,
-    settingPanel
+    settingPanel,
+    loadingPanel
 }

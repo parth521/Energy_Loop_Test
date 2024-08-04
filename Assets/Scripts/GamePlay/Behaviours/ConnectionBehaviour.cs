@@ -1,20 +1,18 @@
 using UnityEngine;
 using System.Collections.Generic;
-using System.Collections;
-using System.Linq;
 public class ConnectionBehaviour : MonoBehaviour
 {
-    public List<GameElement> gameElements = new List<GameElement>();
+  //  public List<GameElement> gameElements = new List<GameElement>();
     [SerializeField] private Transform elementsParent;
     [SerializeField] private GamePlayActions gamePlayActions;
     [SerializeField] private LevelActions levelActions;
+    [SerializeField] private GameData gameData;
     private Graph graph;
 
     private void OnEnable()
     {
 
         gamePlayActions.onConnectionMade += OnConnectionMade;
-
         gamePlayActions.onConnectionLost += OnConnectionLost;
         gamePlayActions.onLevelStart += OnLevelStart;
         levelActions.onLevelGenerated += OnLevelGenerated;
@@ -40,21 +38,17 @@ public class ConnectionBehaviour : MonoBehaviour
     }
     private void OnLevelGenerated()
     {
-        gameElements.Clear();
-        foreach (GameElement gameElement in elementsParent.GetComponentsInChildren<GameElement>())
-        {
-            gameElements.Add(gameElement);
-        }
+      
         SetGraph();
         graph.TurnOnNode += TurnOnPower;
         graph.TurnOffNode += TurnOffPower;
     }
     private void SetGraph()
     {
-        graph = new Graph(gameElements.Count);
-        for (int elementIndex = 0; elementIndex < gameElements.Count; elementIndex++)
+        graph = new Graph(gameData.inGameElements.Count);
+        for (int elementIndex = 0; elementIndex < gameData.inGameElements.Count; elementIndex++)
         {
-            bool isPowerNode = gameElements[elementIndex].IsPowerSource;
+            bool isPowerNode = gameData.inGameElements[elementIndex].IsPowerSource;
             Node node = new Node(elementIndex, isPowerNode);
             graph.AddNode(node);
         }
@@ -69,15 +63,15 @@ public class ConnectionBehaviour : MonoBehaviour
     }
     private GameElement GetElementById(int id)
     {
-        return gameElements.Find(x => x.ElementId == id);
+        return gameData.inGameElements.Find(x => x.ElementId == id);
     }
     private void OnConnectionLost(int from,int to)
     {
-           graph.RemoveEdge(from, to);
+        graph.RemoveEdge(from, to);
     }
     private void OnConnectionMade(int from, int to)
     {
-           graph.AddEdge(from, to);
+        graph.AddEdge(from, to);
     }
 
 }

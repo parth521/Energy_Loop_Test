@@ -25,9 +25,12 @@ public class Cable : GameElement, IRotatable
     public override void TurnPowerOn()
     {
         cableImage.color = turnOnColor;
+        HasPower = true;
+        gamePlayActions.onMoveMade?.Invoke();
     }
     public override void TurnPowerOff()
     {
         cableImage.color = turnOffColor;
+        HasPower = false;
     }
 }

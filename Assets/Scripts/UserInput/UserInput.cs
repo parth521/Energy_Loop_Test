@@ -10,7 +10,7 @@ public class UserInput :MonoBehaviour, IPointerClickHandler
         GameElement gameElement= eventData.pointerCurrentRaycast.gameObject?.GetComponent<GameElement>(); 
         if (gameElement == null) return;
 
-        
+   
         userActions.OnClick?.Invoke(gameElement);
     }
 }

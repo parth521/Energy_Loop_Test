@@ -8,7 +8,6 @@ public class Blub : GameElement, IRotatable
     [SerializeField] private Image blubCableImage;
     [SerializeField] private Color turnOffColor;
     [SerializeField] private Color turnOnColor;
-
     private void OnEnable()
     {
         bulbImage.color = turnOffColor;
@@ -32,11 +31,14 @@ public class Blub : GameElement, IRotatable
     {
         bulbImage.color = turnOnColor;
         blubCableImage.color = turnOnColor;
+        HasPower = true;
+        gamePlayActions.onMoveMade?.Invoke();
     }
 
     public override void TurnPowerOff()
     {
         bulbImage.color = turnOffColor;
         blubCableImage.color = turnOffColor;
+        HasPower = false;
     }
 }
