@@ -22,7 +22,6 @@ public class Rules : MonoBehaviour
     }
     public void CheckRules()
     {
-        Debug.LogError(isLevelClear + "islevel clear");
         if(gameData.inGameElements.TrueForAll(x=>x.HasPower)&& !isLevelClear)
         {
             isLevelClear = true;

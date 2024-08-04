@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89aef7685693c49d988de0f1feaa0589, type: 3}
   m_Name: levelData
   m_EditorClassIdentifier: 
-  currentLevel: 0
+  currentLevel: 1
   unlockedLevel: 0
   levels:
   - elements:
@@ -40,6 +40,43 @@ MonoBehaviour:
       position: {x: 0, y: 127.85736}
       rotation: {x: 0, y: 0, z: 180}
       solutionsRotation: {x: -0, y: 0, z: 90}
+  - elements:
+    - id: 0
+      gameElementType: 5
+      isHexagonSetup: 0
+      position: {x: 256, y: -128.14258}
+      rotation: {x: -0, y: 0, z: 90}
+      solutionsRotation: {x: -0, y: 0, z: 90}
+    - id: 1
+      gameElementType: 1
+      isHexagonSetup: 0
+      position: {x: 0, y: -128.14258}
+      rotation: {x: 0, y: 0, z: 270}
+      solutionsRotation: {x: -0, y: 0, z: 90}
+    - id: 2
+      gameElementType: 1
+      isHexagonSetup: 0
+      position: {x: -256, y: -128.14258}
+      rotation: {x: 0, y: 0, z: 180}
+      solutionsRotation: {x: -0, y: 0, z: 90}
+    - id: 3
+      gameElementType: 1
+      isHexagonSetup: 0
+      position: {x: 256, y: 127.85742}
+      rotation: {x: 0, y: 0, z: 0}
+      solutionsRotation: {x: -0, y: 0, z: 90}
+    - id: 4
+      gameElementType: 1
+      isHexagonSetup: 0
+      position: {x: 0, y: 127.85742}
+      rotation: {x: 0, y: 0, z: 270}
+      solutionsRotation: {x: -0, y: 0, z: 90}
+    - id: 5
+      gameElementType: 6
+      isHexagonSetup: 0
+      position: {x: -256, y: 127.85742}
+      rotation: {x: 0, y: 0, z: 0}
+      solutionsRotation: {x: -0, y: 0, z: 270}
   - elements:
     - id: 0
       gameElementType: 4
