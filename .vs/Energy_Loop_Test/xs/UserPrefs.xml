@@ -1,41 +1,42 @@
 ﻿<Properties StartupConfiguration="{C0CB9BD6-C1B0-B20A-9593-3635667E5BB8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GamePlay/LevelManager/LevelGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GamePlay/Behaviours/CameraShake.cs">
     <Files>
-      <File FileName="Assets/Scripts/Score/ScoreCalculator.cs" Line="10" Column="21" />
-      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelManager.cs" Line="56" Column="34" />
+      <File FileName="Assets/Scripts/Score/ScoreCalculator.cs" Line="31" Column="78" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelManager.cs" Line="22" Column="71" />
       <File FileName="Assets/Scripts/UI/UIAnimations/Animations/ScaleElement.cs" />
-      <File FileName="Assets/Scripts/GamePlay/Behaviours/ConnectionBehaviour.cs" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/ConnectionBehaviour.cs" Line="18" Column="22" />
       <File FileName="Assets/Scripts/Graph/Graph.cs" />
       <File FileName="Assets/Scripts/GamePlay/Elements/GameElement.cs" />
       <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelActions.cs" Line="13" Column="42" />
-      <File FileName="Assets/Scripts/UI/UIPanels/SettingPanel.cs" />
-      <File FileName="Assets/Scripts/GamePlay/LevelManager/DataClass/LevelData.cs" Line="19" Column="27" />
+      <File FileName="Assets/Scripts/UI/UIPanels/SettingPanel.cs" Line="16" Column="22" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/DataClass/LevelData.cs" Line="6" Column="14" />
       <File FileName="Assets/Scripts/GamePlay/GameData.cs" />
       <File FileName="Assets/Scripts/UI/UIPanels/GamePlayPanel.cs" />
-      <File FileName="Assets/Scripts/GamePlay/Rules/Rules.cs" />
-      <File FileName="Assets/Scripts/UI/UIPanels/LevelLoadingPanel.cs" />
+      <File FileName="Assets/Scripts/GamePlay/Rules/Rules.cs" Line="29" Column="36" />
+      <File FileName="Assets/Scripts/UI/UIPanels/LevelLoadingPanel.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/UI/UIPanels/HintPanel.cs" />
       <File FileName="Assets/Scripts/UI/BasePanel.cs" Line="4" Column="23" />
-      <File FileName="Assets/Scripts/UI/UIManager.cs" Line="10" Column="6" />
+      <File FileName="Assets/Scripts/UI/UIManager.cs" Line="29" Column="17" />
       <File FileName="Assets/Scripts/UI/UIAnimations/Animations/Animator.cs" Line="53" Column="10" />
-      <File FileName="Assets/Scripts/UI/UIPanels/SplshPanel.cs" />
+      <File FileName="Assets/Scripts/UI/UIPanels/SplshPanel.cs" Line="27" Column="31" />
       <File FileName="Assets/Scripts/GamePlay/Other/ObjectPoolManager.cs" Line="33" Column="10" />
       <File FileName="Assets/Scripts/GamePlay/Elements/Blub.cs" />
-      <File FileName="Assets/Scripts/GamePlay/SoundManager/SoundManager.cs" />
+      <File FileName="Assets/Scripts/GamePlay/SoundManager/SoundManager.cs" Line="23" Column="22" />
       <File FileName="Assets/Scripts/GamePlay/SoundManager/Data/AudioData.cs" />
       <File FileName="Assets/Scripts/GamePlay/GameActions/GamePlayActions.cs" />
       <File FileName="Assets/Scripts/UI/ToggleSprite.cs" Line="36" Column="46" />
-      <File FileName="Assets/Scripts/GamePlay/HapticManager/HapticManager.cs" Line="4" Column="14" />
+      <File FileName="Assets/Scripts/GamePlay/HapticManager/HapticManager.cs" Line="35" Column="30" />
       <File FileName="Library/PackageCache/xyz.candycoded.hapticfeedback@4597a0376e/Scripts/HapticFeedback.cs" Line="6" Column="25" />
       <File FileName="Assets/Scripts/UserInput/UserInput.cs" Line="7" Column="35" />
       <File FileName="Assets/Scripts/GamePlay/Behaviours/HintController.cs" Line="37" Column="1" />
-      <File FileName="Assets/Scripts/Score/ScoreConfig.cs" Line="8" Column="45" />
+      <File FileName="Assets/Scripts/Score/ScoreConfig.cs" Line="6" Column="14" />
       <File FileName="Assets/Scripts/UI/UIAnimations/Animations/TextIncrementEffect.cs" Line="20" Column="32" />
-      <File FileName="Assets/Scripts/UI/UIPanels/ScoreDispalyPanel.cs" Line="18" Column="1" />
+      <File FileName="Assets/Scripts/UI/UIPanels/ScoreDispalyPanel.cs" Line="15" Column="6" />
       <File FileName="Assets/Scripts/UI/UIAnimations/Animations/BaseUIAnimation.cs" Line="5" Column="24" />
       <File FileName="Assets/Scripts/UI/UIAnimations/Animations/UISlide.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelTransition.cs" Line="31" Column="31" />
       <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelGenerator.cs" Line="8" Column="38" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/CameraShake.cs" Line="7" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

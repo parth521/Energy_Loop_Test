@@ -42,7 +42,6 @@ MonoBehaviour:
       solutionsRotation: {x: -0, y: 0, z: 90}
     tapThressHold: 16
     levelScore: 100
-    isUnlocked: 1
   - elements:
     - id: 0
       gameElementType: 5
@@ -82,7 +81,6 @@ MonoBehaviour:
       solutionsRotation: {x: -0, y: 0, z: 270}
     tapThressHold: 24
     levelScore: 100
-    isUnlocked: 0
   - elements:
     - id: 0
       gameElementType: 4
@@ -164,7 +162,6 @@ MonoBehaviour:
       solutionsRotation: {x: -0, y: 0, z: 0}
     tapThressHold: 15
     levelScore: 100
-    isUnlocked: 0
   - elements:
     - id: 0
       gameElementType: 8
@@ -204,4 +201,3 @@ MonoBehaviour:
       solutionsRotation: {x: -0, y: 0, z: 0}
     tapThressHold: 36
     levelScore: 100
-    isUnlocked: 0
