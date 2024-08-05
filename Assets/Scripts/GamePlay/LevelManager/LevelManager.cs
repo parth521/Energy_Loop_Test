@@ -1,88 +1,69 @@
 using UnityEngine;
-using System.Collections;
 
 public class LevelManager : MonoBehaviour
 {
-    public LevelData levels;
-    public GameData gameData;
-    public LevelActions levelActions;
-    [SerializeField]private Transform parentContent;
+    [SerializeField]private LevelData levels;
+    [SerializeField]private LevelActions levelActions;
+
+    private LevelGenerator levelGenerator;
+    private LevelTransition levelTransition;
+
+    private void Awake()
+    {
+        levelGenerator = GetComponent<LevelGenerator>();
+        levelTransition = GetComponent<LevelTransition>();
+    }
+
     private void OnEnable()
     {
-        levelActions.generateLevel += OnGenerateLevel;
-        levelActions.resetLevel += ResetLevel;
+        levelActions.generateLevel += GenerateLevel;
+        levelActions.onNextLevelButton += NextLevel;
+        levelActions.onPreviousLevelButton += PreviousLevel;
         levelActions.onLevelClear += OnLevelClear;
     }
+
     private void OnDisable()
     {
-        levelActions.generateLevel -= OnGenerateLevel;
-        levelActions.resetLevel -= ResetLevel;
+        levelActions.generateLevel -= GenerateLevel;
+        levelActions.onNextLevelButton -= NextLevel;
+        levelActions.onPreviousLevelButton -= PreviousLevel;
         levelActions.onLevelClear -= OnLevelClear;
     }
-    private void OnGenerateLevel()
+    public void GenerateLevel()
     {
-        gameData.inGameElements.Clear();
-        Level level = levels.levels[levels.currentLevel];
-         for(int elementIndex=0;elementIndex<level.elements.Count; elementIndex++)
-           {
-           GameElement gameElement = gameData.genrativeDatas.Find(x => x.elementType == level.elements[elementIndex].gameElementType);
-           
-            GameElement currentGameElement= ObjectPoolManager.Instance.GetObject(gameElement);
-            currentGameElement.transform.parent = parentContent;
-            currentGameElement.transform.localScale = Vector3.one;
-            currentGameElement.GetComponent<RectTransform>().localPosition = level.elements[elementIndex].position;
-           currentGameElement.GetComponent<RectTransform>().localEulerAngles = level.elements[elementIndex].rotation;
-           currentGameElement.UseHexagonRotation = level.elements[elementIndex].isHexagonSetup;
-            currentGameElement.ElementId = level.elements[elementIndex].id;
-            gameData.inGameElements.Add(currentGameElement);
-    
+        levelGenerator.GenerateLevel();
+    }
+    public void NextLevel()
+    {
+        ChangeLevel(1);
+    }
+    public void PreviousLevel()
+    {
+        ChangeLevel(-1);
+    }
+
+    private void ChangeLevel(int change)
+    {
+        levels.currentLevel += change;
+
+        if (levels.currentLevel > levels.unlockedLevel)
+        {
+            levels.unlockedLevel = levels.currentLevel;
         }
-       levelActions.onLevelGenerated?.Invoke();
+
+        levels.currentLevel = Mathf.Clamp(levels.currentLevel, 0, levels.levels.Count - 1);
+
+        levelTransition.StartLevelSwitch();
     }
-    private void ResetLevel()
-    {
-        OnGenerateLevel();
-    }
+
     private void OnLevelClear()
     {
         NextLevel();
     }
-    public void NextLevel()
-    {
-        levels.currentLevel++;
-        if(levels.currentLevel>=levels.levels.Count-1)
-        {
-            levels.currentLevel = (levels.levels.Count - 1);
-        }
-        StartCoroutine(SwitchingLevel());
-    }
-    public void PreviousLevel()
-    {
-        levels.currentLevel--;
-        if(levels.currentLevel<=0)
-        {
-            levels.currentLevel = 0;
-        }
-        StartCoroutine(SwitchingLevel());
-    }
-    private IEnumerator SwitchingLevel()
-    {
-        yield return new WaitForSeconds(.5f);
-        UIManager.Instance.ShowPanel(PanelName.loadingPanel);
-        foreach (GameElement gameElement in gameData.inGameElements)
-        {
-            if (gameElement.elementType != GameElementType.PowerSource)
-            {
-                gameElement.HasPower = false;
-            }
-            ObjectPoolManager.Instance.ReturnObject(gameElement);
-        }
-        yield return new WaitForSeconds(.5f);
-        //OnGenerateLevel();
-    }
+
     public void OnCompleteLoading()
     {
-        OnGenerateLevel();
         UIManager.Instance.HidePanel(PanelName.loadingPanel);
+        levelGenerator.GenerateLevel();
     }
 }

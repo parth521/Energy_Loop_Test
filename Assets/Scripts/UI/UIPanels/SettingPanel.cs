@@ -37,17 +37,26 @@ public class SettingPanel : BasePanel
     private void OnLevelGenerated()
     {
         levelNumber.text = (levelData.currentLevel+1).ToString();
+        UIManager.Instance.ShowPanel(PanelName.gmmePlayPanel);
     }
+   
     public void OnNextLevel()
     {
-       
+        UpdateButtonStates();
+        levelActions.onNextLevelButton?.Invoke();
+        UIManager.Instance.HidePanel(PanelName.settingPanel);
     }
+
     public void OnPreviousLevel()
     {
-     
+        UpdateButtonStates();
+        levelActions.onPreviousLevelButton?.Invoke();
+        UIManager.Instance.HidePanel(PanelName.settingPanel);
     }
     public void OnMuteUnMuteToggle()
     {
+        SoundManager.Instance.MusicToggle();
+        
     }
     public void OnHapticToggle()
     {
@@ -56,13 +65,14 @@ public class SettingPanel : BasePanel
     {
         levelActions.resetLevel?.Invoke();
     }
-    public void UpdateButtonStates()
+    private void UpdateButtonStates()
     {
-        // Enable or disable previous button
-        previousButton.interactable =levelData.currentLevel > 0;
+        bool isAtFirstLevel = levelData.currentLevel == 0;
+        bool isAtLastLevel = levelData.currentLevel == levelData.unlockedLevel;
+        bool hasUnlockedLevels = levelData.unlockedLevel > 0;
 
-        // Enable or disable next button
-       // nextButton.interactable = levelData.currentLevel < levelData.totalClearedLevel;
+        nextButton.interactable = hasUnlockedLevels && !isAtLastLevel;
+        previousButton.interactable = !isAtFirstLevel;
     }
 
 }

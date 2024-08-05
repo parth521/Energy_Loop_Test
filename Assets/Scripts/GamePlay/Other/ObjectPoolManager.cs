@@ -31,7 +31,7 @@ public class ObjectPoolManager : Singleton<ObjectPoolManager>
         {
             poolDictionary[key] = new Queue<GameElement>();
         }
-
+        UnityEngine.Debug.LogError("a obj.gameObjec" + obj.gameObject.name);
         obj.gameObject.SetActive(false);
         poolDictionary[key].Enqueue(obj);
     }

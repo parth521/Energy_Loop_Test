@@ -1,27 +1,37 @@
 ﻿<Properties StartupConfiguration="{C0CB9BD6-C1B0-B20A-9593-3635667E5BB8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/UIPanels/HintPanel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GamePlay/HapticManager/HapticManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelManager.cs" Line="48" Column="21" />
-      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/ScaleElement.cs" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/GamePlay/Behaviours/ConnectionBehaviour.cs" Line="38" Column="28" />
-      <File FileName="Assets/Scripts/Graph/Graph.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GamePlay/Elements/GameElement.cs" Line="25" Column="1" />
-      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelActions.cs" Line="7" Column="19" />
-      <File FileName="Assets/Scripts/UI/UIPanels/SettingPanel.cs" Line="38" Column="6" />
-      <File FileName="Assets/Scripts/GamePlay/LevelManager/DataClass/LevelData.cs" Line="10" Column="51" />
-      <File FileName="Assets/Scripts/GamePlay/GameData.cs" Line="8" Column="44" />
-      <File FileName="Assets/Scripts/UI/UIPanels/GamePlayPanel.cs" Line="19" Column="37" />
-      <File FileName="Assets/Scripts/GamePlay/Rules/Rules.cs" Line="20" Column="6" />
-      <File FileName="Assets/Scripts/UI/UIPanels/LevelLoadingPanel.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UI/UIPanels/HintPanel.cs" Line="11" Column="9" />
-      <File FileName="Assets/Scripts/UI/BasePanel.cs" Line="8" Column="16" />
-      <File FileName="Assets/Scripts/UI/UIManager.cs" Line="49" Column="14" />
-      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/Animator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelManager.cs" Line="67" Column="36" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/ScaleElement.cs" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/ConnectionBehaviour.cs" Line="18" Column="22" />
+      <File FileName="Assets/Scripts/Graph/Graph.cs" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/GameElement.cs" Line="3" Column="23" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelActions.cs" Line="12" Column="41" />
+      <File FileName="Assets/Scripts/UI/UIPanels/SettingPanel.cs" Line="58" Column="37" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/DataClass/LevelData.cs" />
+      <File FileName="Assets/Scripts/GamePlay/GameData.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/UI/UIPanels/GamePlayPanel.cs" Line="23" Column="63" />
+      <File FileName="Assets/Scripts/GamePlay/Rules/Rules.cs" Line="12" Column="22" />
+      <File FileName="Assets/Scripts/UI/UIPanels/LevelLoadingPanel.cs" />
+      <File FileName="Assets/Scripts/UI/UIPanels/HintPanel.cs" />
+      <File FileName="Assets/Scripts/UI/BasePanel.cs" />
+      <File FileName="Assets/Scripts/UI/UIManager.cs" />
+      <File FileName="Assets/Scripts/UI/UIAnimations/Animations/Animator.cs" />
+      <File FileName="Assets/LevelGenerator.cs" Line="28" Column="30" />
+      <File FileName="Assets/LevelTransition.cs" Line="30" Column="10" />
+      <File FileName="Assets/Scripts/UI/UIPanels/SplshPanel.cs" Line="21" Column="9" />
+      <File FileName="Assets/Scripts/GamePlay/Other/ObjectPoolManager.cs" Line="26" Column="17" />
+      <File FileName="Assets/Scripts/GamePlay/Elements/Blub.cs" Line="42" Column="26" />
+      <File FileName="Assets/Scripts/GamePlay/SoundManager/SoundManager.cs" Line="41" Column="30" />
+      <File FileName="Assets/Scripts/GamePlay/SoundManager/Data/AudioData.cs" Line="9" Column="28" />
+      <File FileName="Assets/Scripts/GamePlay/GameActions/GamePlayActions.cs" Line="11" Column="30" />
+      <File FileName="Assets/Scripts/UI/ToggleSprite.cs" Line="40" Column="33" />
+      <File FileName="Assets/Scripts/GamePlay/HapticManager/HapticManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fdb9bae3-dcbf-4a26-860a-e788dd14424d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4b6ac02a-bbb4-44cd-b532-12a66e72b33c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

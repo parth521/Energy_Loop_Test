@@ -8,4 +8,6 @@ public class LevelActions : ScriptableObject
     public Action onLevelGenerated;
     public Action onLevelClear;
     public Action resetLevel;
+    public Action onNextLevelButton;
+    public Action onPreviousLevelButton;
 }

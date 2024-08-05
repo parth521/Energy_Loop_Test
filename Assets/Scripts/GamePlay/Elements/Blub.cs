@@ -15,7 +15,7 @@ public class Blub : GameElement, IRotatable
     }
     private void Start()
     {
-        Rotate();
+        blubLockRotation.FixRotate(this);
     }
     public void SetRotationStrategy(IRotationStrategy strategy)
     {
