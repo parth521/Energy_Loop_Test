@@ -8,10 +8,6 @@ public class UIManager : Singleton<UIManager>
 
     private void Start()
     {
-        foreach (var panel in panels)
-        {
-         panel.Value.Hide();
-        }
         ShowPanel(PanelName.splashPanel);
     }
     public void RegisterPanel(PanelName panelName, BasePanel panel)
@@ -46,5 +42,6 @@ public enum PanelName
     menuPanel,
     settingPanel,
     loadingPanel,
-    hintPanel
+    hintPanel,
+    scorePanel
 }

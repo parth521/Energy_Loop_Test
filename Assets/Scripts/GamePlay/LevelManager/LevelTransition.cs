@@ -28,5 +28,6 @@ public class LevelTransition : MonoBehaviour
             }
             ObjectPoolManager.Instance.ReturnObject(gameElement);
         }
+        levelGenerator.GenerateLevel();
     }
 }

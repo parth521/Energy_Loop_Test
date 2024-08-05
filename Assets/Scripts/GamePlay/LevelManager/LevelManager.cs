@@ -19,7 +19,8 @@ public class LevelManager : MonoBehaviour
         levelActions.generateLevel += GenerateLevel;
         levelActions.onNextLevelButton += NextLevel;
         levelActions.onPreviousLevelButton += PreviousLevel;
-        levelActions.onLevelClear += OnLevelClear;
+        levelActions.onScoreCalculationDone += OnScoreCalculationDone;
+        levels.OnEnable();
     }
 
     private void OnDisable()
@@ -27,7 +28,8 @@ public class LevelManager : MonoBehaviour
         levelActions.generateLevel -= GenerateLevel;
         levelActions.onNextLevelButton -= NextLevel;
         levelActions.onPreviousLevelButton -= PreviousLevel;
-        levelActions.onLevelClear -= OnLevelClear;
+        levelActions.onScoreCalculationDone -= OnScoreCalculationDone;
+        levels.OnDisable();
     }
     public void GenerateLevel()
     {
@@ -56,11 +58,11 @@ public class LevelManager : MonoBehaviour
         levelTransition.StartLevelSwitch();
     }
 
-    private void OnLevelClear()
+    private void OnScoreCalculationDone()
     {
-        NextLevel();
+        UIManager.Instance.ShowPanel(PanelName.scorePanel);
     }
-
+    
     public void OnCompleteLoading()
     {
         UIManager.Instance.HidePanel(PanelName.loadingPanel);

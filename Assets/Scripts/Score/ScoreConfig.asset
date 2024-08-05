@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85939d6dc5add4418902f0395c4870ed, type: 3}
+  m_Name: ScoreConfig
+  m_EditorClassIdentifier: 
+  defaultConfigData:
+    thresshold: 0
+    points: 0
+    stars: 0
+  scoreConfigDatas:
+  - thresshold: 0
+    points: 100
+    stars: 3
+  - thresshold: 1
+    points: 80
+    stars: 3
+  - thresshold: 2
+    points: 50
+    stars: 2
+  - thresshold: 3
+    points: 10
+    stars: 1

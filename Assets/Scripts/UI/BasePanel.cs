@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.Events;
 public abstract class BasePanel : MonoBehaviour
 {
     protected Canvas canvas;
@@ -9,6 +9,7 @@ public abstract class BasePanel : MonoBehaviour
     private CanvasGroup canvasGroup;
     private int highSortingOrder=20;
     private int lowSortingOrder= 0;
+ 
     protected virtual void Awake()
     {
         UIManager.Instance.RegisterPanel(panelName, this);
@@ -38,12 +39,9 @@ public abstract class BasePanel : MonoBehaviour
     }
     protected virtual void OnShowAnimationComplete()
     {
-        //do something
-       
     }
     protected virtual void OnHideAnimationComplete()
-    {
-       
+    { 
     }
 
 

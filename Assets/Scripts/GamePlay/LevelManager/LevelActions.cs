@@ -10,4 +10,5 @@ public class LevelActions : ScriptableObject
     public Action resetLevel;
     public Action onNextLevelButton;
     public Action onPreviousLevelButton;
+    public Action onScoreCalculationDone;
 }
