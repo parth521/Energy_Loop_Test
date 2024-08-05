@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: levelData
   m_EditorClassIdentifier: 
   currentLevel: 0
-  unlockedLevel: 4
+  unlockedLevel: 0
   levels:
   - elements:
     - id: 0
