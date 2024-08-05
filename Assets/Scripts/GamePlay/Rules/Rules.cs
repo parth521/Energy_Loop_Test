@@ -26,6 +26,7 @@ public class Rules : MonoBehaviour
         {
             isLevelClear = true;
             levelActions.onLevelClear?.Invoke();
+            HapticManager.Instance.HeavyFeedback();
         }
     }
 }

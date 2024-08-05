@@ -10,7 +10,8 @@ public class UserInput :MonoBehaviour, IPointerClickHandler
         GameElement gameElement= eventData.pointerCurrentRaycast.gameObject?.GetComponent<GameElement>(); 
         if (gameElement == null) return;
 
-   
+        HapticManager.Instance.LightFeedback();
+
         userActions.OnClick?.Invoke(gameElement);
     }
 }

@@ -60,6 +60,7 @@ public class SettingPanel : BasePanel
     }
     public void OnHapticToggle()
     {
+        HapticManager.Instance.SetHapticToggle();
     }
     public void OnResetLevel()
     {

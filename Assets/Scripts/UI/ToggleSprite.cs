@@ -33,13 +33,13 @@ public class ToggleButton : MonoBehaviour
 
     private void SaveSpriteState()
     {
-        PlayerPrefs.SetInt("SpriteState", isSprite1 ? 1 : 0);
+        PlayerPrefs.SetInt("SpriteStateHaptic", isSprite1 ? 1 : 0);
         PlayerPrefs.Save();
     }
 
     private void LoadSpriteState()
     {
-        isSprite1 = PlayerPrefs.GetInt("SpriteState", 1) == 1; // Default to sprite1 if key doesn't exist
+        isSprite1 = PlayerPrefs.GetInt("SpriteStateHaptic", 1) == 1; // Default to sprite1 if key doesn't exist
         buttonImage.sprite = isSprite1 ? sprite1 : sprite2;
     }
 }

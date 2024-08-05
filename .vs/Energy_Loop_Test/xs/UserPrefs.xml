@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{C0CB9BD6-C1B0-B20A-9593-3635667E5BB8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GamePlay/HapticManager/HapticManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GamePlay/Behaviours/HintController.cs">
     <Files>
       <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelManager.cs" Line="67" Column="36" />
       <File FileName="Assets/Scripts/UI/UIAnimations/Animations/ScaleElement.cs" />
@@ -7,11 +7,11 @@
       <File FileName="Assets/Scripts/Graph/Graph.cs" />
       <File FileName="Assets/Scripts/GamePlay/Elements/GameElement.cs" Line="3" Column="23" />
       <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelActions.cs" Line="12" Column="41" />
-      <File FileName="Assets/Scripts/UI/UIPanels/SettingPanel.cs" Line="58" Column="37" />
+      <File FileName="Assets/Scripts/UI/UIPanels/SettingPanel.cs" Line="63" Column="50" />
       <File FileName="Assets/Scripts/GamePlay/LevelManager/DataClass/LevelData.cs" />
       <File FileName="Assets/Scripts/GamePlay/GameData.cs" Line="4" Column="1" />
       <File FileName="Assets/Scripts/UI/UIPanels/GamePlayPanel.cs" Line="23" Column="63" />
-      <File FileName="Assets/Scripts/GamePlay/Rules/Rules.cs" Line="12" Column="22" />
+      <File FileName="Assets/Scripts/GamePlay/Rules/Rules.cs" Line="29" Column="52" />
       <File FileName="Assets/Scripts/UI/UIPanels/LevelLoadingPanel.cs" />
       <File FileName="Assets/Scripts/UI/UIPanels/HintPanel.cs" />
       <File FileName="Assets/Scripts/UI/BasePanel.cs" />
@@ -25,8 +25,11 @@
       <File FileName="Assets/Scripts/GamePlay/SoundManager/SoundManager.cs" Line="41" Column="30" />
       <File FileName="Assets/Scripts/GamePlay/SoundManager/Data/AudioData.cs" Line="9" Column="28" />
       <File FileName="Assets/Scripts/GamePlay/GameActions/GamePlayActions.cs" Line="11" Column="30" />
-      <File FileName="Assets/Scripts/UI/ToggleSprite.cs" Line="40" Column="33" />
-      <File FileName="Assets/Scripts/GamePlay/HapticManager/HapticManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UI/ToggleSprite.cs" Line="36" Column="46" />
+      <File FileName="Assets/Scripts/GamePlay/HapticManager/HapticManager.cs" Line="4" Column="14" />
+      <File FileName="Library/PackageCache/xyz.candycoded.hapticfeedback@4597a0376e/Scripts/HapticFeedback.cs" Line="6" Column="25" />
+      <File FileName="Assets/Scripts/UserInput/UserInput.cs" Line="13" Column="48" />
+      <File FileName="Assets/Scripts/GamePlay/Behaviours/HintController.cs" Line="4" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
