@@ -1,12 +1,18 @@
 ﻿<Properties StartupConfiguration="{C0CB9BD6-C1B0-B20A-9593-3635667E5BB8}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Core/Singleton.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI/UIPanels/SettingPanel.cs">
     <Files>
       <File FileName="Assets/Scripts/Actions/GameActions/GamePlayActions.cs" Line="9" Column="45" />
-      <File FileName="Assets/Scripts/Actions/LevelActions/LevelActions.cs" Line="8" Column="36" />
-      <File FileName="Assets/Scripts/Actions/UserActions/UserInputActions.cs" Line="9" Column="1" />
-      <File FileName="Assets/Scripts/Core/Graph.cs" Line="7" Column="30" />
-      <File FileName="Assets/Scripts/Core/Node.cs" Line="14" Column="1" />
-      <File FileName="Assets/Scripts/Core/Singleton.cs" Line="14" Column="14" />
+      <File FileName="Assets/Scripts/Actions/LevelActions/LevelActions.cs" />
+      <File FileName="Assets/Scripts/Actions/UserActions/UserInputActions.cs" />
+      <File FileName="Assets/Scripts/Core/Graph.cs" />
+      <File FileName="Assets/Scripts/Core/Node.cs" />
+      <File FileName="Assets/Scripts/Core/Singleton.cs" />
+      <File FileName="Assets/Scripts/Utilities/SaveLoadManager.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/Data/LevelData/LevelData.cs" />
+      <File FileName="Assets/Scripts/GamePlay/LevelManager/LevelManager.cs" Line="30" Column="71" />
+      <File FileName="Assets/Scripts/UI/Animations/UISlide.cs" />
+      <File FileName="Assets/Scripts/UI/UIPanels/HintPanel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UI/UIPanels/SettingPanel.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

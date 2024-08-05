@@ -20,7 +20,6 @@ public class LevelManager : MonoBehaviour
         levelActions.onNextLevelButton += NextLevel;
         levelActions.onPreviousLevelButton += PreviousLevel;
         levelActions.onScoreCalculationDone += OnScoreCalculationDone;
-        levels.OnLevelEnable();
     }
 
     private void OnDisable()
@@ -29,7 +28,6 @@ public class LevelManager : MonoBehaviour
         levelActions.onNextLevelButton -= NextLevel;
         levelActions.onPreviousLevelButton -= PreviousLevel;
         levelActions.onScoreCalculationDone -= OnScoreCalculationDone;
-        levels.OnLevelDisable();
     }
     public void GenerateLevel()
     {

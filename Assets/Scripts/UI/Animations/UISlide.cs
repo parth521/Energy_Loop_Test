@@ -13,7 +13,7 @@ public class UISlide :BaseUIAnimation
     public override void PlayHideAnimation(Action callback)
     {
         rectTransform.anchoredPosition = showPosition;
-        Tween slideTween = rectTransform.DOLocalMove(hidePosition,duration);
+        Tween slideTween = rectTransform.DOAnchorPos(hidePosition,duration);
         slideTween.SetEase(easeMovementType);
         slideTween.SetDelay(delay);
         slideTween.OnComplete(() => callback?.Invoke());
@@ -22,7 +22,7 @@ public class UISlide :BaseUIAnimation
     public override void PlayShowAnimation(Action callback)
     {
         rectTransform.anchoredPosition = hidePosition;
-        Tween slideTween = rectTransform.DOLocalMove(showPosition, duration);
+        Tween slideTween = rectTransform.DOAnchorPos(showPosition, duration);
         slideTween.SetEase(easeMovementType);
         slideTween.SetDelay(delay);
         slideTween.OnComplete(() => callback?.Invoke());
