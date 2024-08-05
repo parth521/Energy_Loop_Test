@@ -14,6 +14,7 @@ public class Cable : GameElement, IRotatable
     public void SetRotationStrategy(IRotationStrategy strategy)
     {
         this.rotationStrategy = strategy;
+        this.rotationStrategy.Start();
     }
 
     public void Rotate()

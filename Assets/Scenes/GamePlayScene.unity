@@ -483,7 +483,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   userActions: {fileID: 11400000, guid: e04850da899054907a641bb907a4da48, type: 2}
-  scoreCalculator: {fileID: 0}
 --- !u!114 &404777560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,6 +496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   userAction: {fileID: 11400000, guid: e04850da899054907a641bb907a4da48, type: 2}
+  levelActions: {fileID: 11400000, guid: 2ad17ae97500640e3a8daea831180586, type: 2}
 --- !u!114 &404777561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,7 +1814,7 @@ GameObject:
   - component: {fileID: 1092906834}
   - component: {fileID: 1092906833}
   m_Layer: 0
-  m_Name: LevelManagers
+  m_Name: LevelManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2165,7 +2165,6 @@ GameObject:
   - component: {fileID: 1255941274}
   - component: {fileID: 1255941273}
   - component: {fileID: 1255941272}
-  - component: {fileID: 1255941275}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -2247,19 +2246,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1255941275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255941271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a40586a6b7cb469686d884773cdd30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelActions: {fileID: 11400000, guid: 2ad17ae97500640e3a8daea831180586, type: 2}
 --- !u!1 &1282689814
 GameObject:
   m_ObjectHideFlags: 0
@@ -9514,6 +9500,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelName: 6
+  gamePlayActions: {fileID: 11400000, guid: c1eb9c54eed7e45bfad6418fc0e1fe35, type: 2}
+  levelData: {fileID: 11400000, guid: e55ec024990bb40f499728ef6f99e6fe, type: 2}
+  gameData: {fileID: 11400000, guid: bd142b8d20c0e4095b959e80f9d8020e, type: 2}
 --- !u!114 &4629045017035435791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9621,6 +9610,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  gamePlayActions: {fileID: 11400000, guid: c1eb9c54eed7e45bfad6418fc0e1fe35, type: 2}
 --- !u!1 &6420194116006718024
 GameObject:
   m_ObjectHideFlags: 0
@@ -9630,6 +9620,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3666409669815446290}
+  - component: {fileID: 6420194116006718025}
   m_Layer: 5
   m_Name: HintEffect
   m_TagString: Untagged
@@ -9637,6 +9628,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6420194116006718025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6420194116006718024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f885bae8743474a7281255592233badb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectTransform: {fileID: 3666409669815446290}
+  hidePosition: {x: 0, y: 1000}
+  showPosition: {x: 0, y: 0}
+  duration: 1
+  easeMovementType: 2
+  delay: 0
 --- !u!224 &6851567791752011863
 RectTransform:
   m_ObjectHideFlags: 0

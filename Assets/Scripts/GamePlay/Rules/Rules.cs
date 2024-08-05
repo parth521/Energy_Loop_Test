@@ -5,6 +5,7 @@ public class Rules : MonoBehaviour
    [SerializeField] private GameData gameData;
     [SerializeField] private GamePlayActions gamePlayActions;
     [SerializeField] private LevelActions levelActions;
+
     private bool isLevelClear;
     private void OnEnable()
     {
@@ -27,6 +28,7 @@ public class Rules : MonoBehaviour
             isLevelClear = true;
             levelActions.onLevelClear?.Invoke();
             HapticManager.Instance.HeavyFeedback();
+         
         }
     }
 }

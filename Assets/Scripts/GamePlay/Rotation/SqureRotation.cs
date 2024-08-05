@@ -3,6 +3,10 @@ public class SqureRotation : IRotationStrategy
 {
     private int[] rotationAngles = { 0, 90, 180, 270 };
 
+    public void Start()
+    {
+        //
+    }
     public void Rotate(GameElement gameElement)
     {
         float currentZRotation = gameElement.transform.rotation.eulerAngles.z;

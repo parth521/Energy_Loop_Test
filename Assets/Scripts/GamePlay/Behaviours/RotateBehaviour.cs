@@ -5,7 +5,7 @@ using UnityEngine;
 public class RotateBehaviour : MonoBehaviour
 {
      [SerializeField] private UserActions userAction;
-
+    [SerializeField] private LevelActions levelActions;
     private void OnEnable()
     {
        userAction.OnClick += OnUserClick;

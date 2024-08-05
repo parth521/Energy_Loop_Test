@@ -9,7 +9,7 @@ public class HintController : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     public bool isLineClicked;
     public float speed;
     public AnimationCurve curve;
-
+    public GamePlayActions gamePlayActions;
     private Vector2 intPosition;
     private float totalLenght;
     private float animTime;
@@ -68,6 +68,7 @@ public class HintController : MonoBehaviour, IPointerDownHandler, IDragHandler, 
             if (progress >= 1f)
             {
                 isLineClicked = true;
+                gamePlayActions.OnHitClick?.Invoke();
             }
         }
     }
